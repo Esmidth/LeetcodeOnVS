@@ -13,11 +13,11 @@ bool cmp(int a,int b)
 }
 double findMedianSortedArrays2(std::vector<int>& nums1, std::vector<int>& nums2) {
 	vector<int> sum;
-	for (int i = 0; i < nums1.size();i++)
+	for (auto i = 0; i < nums1.size();i++)
 	{
 		sum.push_back(nums1[i]);
 	}
-	for (int i = 0; i < nums2.size(); i++)
+	for (auto i = 0; i < nums2.size(); i++)
 	{
 		sum.push_back(nums2[i]);
 	}
@@ -32,14 +32,15 @@ double findMedianSortedArrays2(std::vector<int>& nums1, std::vector<int>& nums2)
 		return sum[length / 2];
 	}
 
+	return 0;
 }
 double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2) {
 	int length = nums1.size() + nums2.size();
 	int medpos = length / 2;
-	int j = 0, k = 0;
+	auto j = 0, k = 0;
 	//return medpos;
-	int l = 3;
-	for (int i = j+k; i < medpos;i = j+k)
+	auto l = 3;
+	for (auto i = j+k; i < medpos;i = j+k)
 	{
 		if(nums1[j]>nums2[k])
 		{
@@ -84,9 +85,9 @@ int main()
 	//t22 = clock();
 	//cout << t22 - t11 << endl;
 	t11 = clock();
-	cout << findMedianSortedArrays2(t1, t2) << endl;
+	cout <<"Median: " << findMedianSortedArrays2(t1, t2) << endl;
 	t22 = clock();
-	cout << t22 - t11 << endl;
+	cout << "Time: "<< t22 - t11 << endl;
 	int temp;
 	cin >> temp;
 	return 0;
