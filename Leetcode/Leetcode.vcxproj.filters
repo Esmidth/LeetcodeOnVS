@@ -39,9 +39,6 @@
     <ClCompile Include="4%28AC%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="2%28AC%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -49,6 +46,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="104.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1%28AC%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
