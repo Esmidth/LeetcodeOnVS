@@ -2,3 +2,4 @@
 2015.9.28	#2		TLE(AC)
 2015.9.29	#4		AC(C++ vector map sort 效率很高)
 2015.10.1	#13		AC(Test Case 很好用)
+2015.10.2	#104	AC
