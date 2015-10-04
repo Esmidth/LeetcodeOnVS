@@ -1,9 +1,8 @@
 //Integer to Roman <Medium>
-// Don't try to make it hard.Just use simply solution.
+// Don't try to make it hard.Just use a simple solution.
 #include "stdafx.h"
 #include <iostream>
 #include <string>
-#include <stack>
 #include <vector>
 
 using namespace std;
