@@ -10,8 +10,9 @@ M	1000
 */
 #include "stdafx.h"
 #include <iostream>
-//#include <string>
+#include <string>
 #include <stack>
+#include <vector>
 
 using namespace std;
 
@@ -37,8 +38,8 @@ int romanToInt(string s)
 	}
 	*/
 	stack<int> I;
-	int temp = 0;
-	for (int i = 0; i < s.length();i++)
+	auto temp = 0;
+	for (auto i = 0; i < s.length();i++)
 	{
 		switch(s[i])
 		{
@@ -155,10 +156,9 @@ int romanToInt(string s)
 	}
 	return sum;
 }
-int main()
+
+void testCase()
 {
-	int pause;
-	
 	cout << "I: 1 " << romanToInt("I") << endl;
 	cout << "III: 3 " << romanToInt("III") << endl;
 	cout << "IV: 4 " << romanToInt("IV") << endl;
@@ -178,5 +178,38 @@ int main()
 	cout << "M: 1000 " << romanToInt("M") << endl;
 	cout << "MCMIV: 1904 " << romanToInt("MCMIV") << endl;
 	cout << "MDCCCLXXXIV: 1884 " << romanToInt("MDCCCLXXXIV") << endl;
+}
+
+
+int test(vector<string> input,vector<int> result)
+{
+	if(input.size() != result.size())
+	{
+		cout << "Error: size don't match";
+		return 1;
+	}
+	for (auto i = 0; i < input.size();i++)
+	{
+		cout << input[i] << ":\t\t";
+		if (romanToInt(input[i]) == result[i])
+		{
+			cout << "Pass" << endl;
+		}
+		else
+		{
+			cout << "Fail" << endl;
+		}
+
+	}
+	return 0;
+
+}
+int main()
+{
+	int pause;
+	//testCase();
+	vector<int> result = { 1,3,4,5,6,10,11,15,16,9,6,50,61,56,100,500,1000,1904,1884 ,123};
+	vector<string> input = { "I","III","IV","V","VI","X","XI","XV","XVI","IX","IVX","L","LXI","LIVX","C","D","M","MCMIV","MDCCCLXXXIV" ,"C"};
+	test(input, result);
 	cin >> pause;
 }
