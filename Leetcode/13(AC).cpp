@@ -180,7 +180,6 @@ void testCase()
 	cout << "MDCCCLXXXIV: 1884 " << romanToInt("MDCCCLXXXIV") << endl;
 }
 
-
 int test(vector<string> input,vector<int> result)
 {
 	if(input.size() != result.size())
@@ -204,6 +203,7 @@ int test(vector<string> input,vector<int> result)
 	return 0;
 
 }
+
 int main()
 {
 	int pause;
