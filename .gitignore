@@ -237,3 +237,6 @@ Leetcode/My Amplifier XE Results - Leetcode/My Amplifier XE Results - Leetcode.a
 *.pchi
 Leetcode/Debug_PG/vc.nativecodeanalysis.all.xml
 *.ipgset
+*.manifest
+Leetcode/Debug_PG/Leetcode.pch.codeanalysisi
+*.idb

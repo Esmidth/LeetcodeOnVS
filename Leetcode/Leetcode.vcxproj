@@ -307,6 +307,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_PG|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="69.cpp" />
     <ClCompile Include="7(AC).cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

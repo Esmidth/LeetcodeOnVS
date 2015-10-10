@@ -7,3 +7,4 @@
 2015.10.3	#12		Medium	AC
 2015.10.4	#19		Easy	AC
 2015.10.8/9	#23		Hard	AC(并归排序)
+2015.10.10	#69		Medium	AC(Cheat)
