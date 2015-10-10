@@ -1,4 +1,4 @@
-//Two 
+ï»¿//Two <Medium>
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
@@ -36,7 +36,7 @@ vector<int> twoSum(vector<int>& nums,int target)
 	}
 	
 	//---------------------------------------------------------------
-	v2,Ã»ÓĞÅÅĞò
+	v2,æ²¡æœ‰æ’åº
 	int i = 0;
 	int j = nums.size()-1;
 

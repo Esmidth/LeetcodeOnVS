@@ -1,14 +1,14 @@
-//Merge k Sorted Lists
+ï»¿//Merge k Sorted Lists <Hard>
 /*
-mergeKLists			34438	k¶Ñ²¢¹é
-mergeKLists2		22080	Í¬ÉÏ,µ«ÓÅ»¯¹ı³Ì
-mergeKLists3				Ê§°Ü
-mergeKLists4		29387	´ÓÊ±¼äÉÏ¿´Í¬1
-mergeKLists5(AC)	6		2¶Ñ²¢¹é
-mergeKLists6(AC)	28		Ê¹ÓÃ<algorithm>ÀïµÄsort
+mergeKLists			34438	kå †å¹¶å½’
+mergeKLists2		22080	åŒä¸Š,ä½†ä¼˜åŒ–è¿‡ç¨‹
+mergeKLists3				å¤±è´¥
+mergeKLists4		29387	ä»æ—¶é—´ä¸Šçœ‹åŒ1
+mergeKLists5(AC)	6		2å †å¹¶å½’
+mergeKLists6(AC)	28		ä½¿ç”¨<algorithm>é‡Œçš„sort
 
-½ÌÑµ£ºÍ¬ÑùÊÇ²¢¹é£¬2¶Ñ±Èk¶Ñ¿ì½ü5000±¶ (ÊµÑéÊı¾İÈ¡Éú³ÉµÄvector)
-ĞèÒªÊìÁ·¸´ÔÓ¶ÈµÄ¼ÆËã
+æ•™è®­ï¼šåŒæ ·æ˜¯å¹¶å½’ï¼Œ2å †æ¯”kå †å¿«è¿‘5000å€ (å®éªŒæ•°æ®å–ç”Ÿæˆçš„vector)
+éœ€è¦ç†Ÿç»ƒå¤æ‚åº¦çš„è®¡ç®—
 */
 #include "stdafx.h"
 #include <iostream>

@@ -1,4 +1,4 @@
-//Maximum Depth of Binary Tree
+//Maximum Depth of Binary Tree <Easy>
 #include "stdafx.h"
 #include <iostream>
 

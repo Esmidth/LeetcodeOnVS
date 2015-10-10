@@ -1,4 +1,4 @@
-//Median of Two Sorted Arrays
+//Median of Two Sorted Arrays <Hard>
 #include "stdafx.h"
 #include <iostream>
 #include <vector>

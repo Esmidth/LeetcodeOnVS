@@ -229,3 +229,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.lastcodeanalysissucceeded
+*.tlog
+Debug_PG/Leetcode.exe
+*.inspxeproj
+Leetcode/My Amplifier XE Results - Leetcode/My Amplifier XE Results - Leetcode.amplxeproj
+*.pchi
+Leetcode/Debug_PG/vc.nativecodeanalysis.all.xml
+*.ipgset

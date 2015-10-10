@@ -1,5 +1,5 @@
-//First Bad Version
-//¶ş·Ö²éÕÒ
+ï»¿//First Bad Version <Easy>
+//äºŒåˆ†æŸ¥æ‰¾
 #include "stdafx.h"
 #include <iostream>
 #include <time.h>

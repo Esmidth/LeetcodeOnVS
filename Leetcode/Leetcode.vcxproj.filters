@@ -60,6 +60,54 @@
     <ClCompile Include="23%28AC%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="7(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="135%28AC%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="155(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="190(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="202(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="273(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="264%28AC%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="263(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="258(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="231(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="227(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="226(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="209(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="208(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="204(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="203(AC).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
