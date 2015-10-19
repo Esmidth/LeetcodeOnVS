@@ -86,7 +86,7 @@ ListNode* mergeKLists(std::vector<ListNode*>& lists)
 	donecount = 0;
 	for (int i = 0; i < size; i++)
 	{
-		if (lists[i] == NULL)
+		if (lists[i] == nullptr)
 		{
 			donecount++;
 		}

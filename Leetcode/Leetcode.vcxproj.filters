@@ -108,7 +108,7 @@
     <ClCompile Include="203(AC).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="69.cpp">
+    <ClCompile Include="69%28AC%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -240,3 +240,24 @@ Leetcode/Debug_PG/vc.nativecodeanalysis.all.xml
 *.manifest
 Leetcode/Debug_PG/Leetcode.pch.codeanalysisi
 *.idb
+*.cfg
+Leetcode/My Advisor XE Results - Leetcode/e000/e000.advixeexp
+*.advixeproj
+Leetcode/My Amplifier XE Results - Leetcode/r000hs/sqlite-db/grouper.metadata
+*.xml
+*.advidb2
+Leetcode/My Advisor XE Results - Leetcode/e000/source_cache/snippets.data
+*.db
+Leetcode/My Amplifier XE Results - Leetcode/r000hs/data.0/27708-28060.0-29408.0.th.aux
+*.norun
+Leetcode/My Amplifier XE Results - Leetcode/r000hs/config/runss.options
+*.aux
+Leetcode/My Amplifier XE Results - Leetcode/r000hs/r000hs.amplxe
+*.dflginspxe
+Leetcode/My Inspector XE Results - Leetcode/r000mi2-bad-bad-bad/r000mi2-bad-bad-bad.inspxe
+*.options
+Leetcode/My Inspector XE Results - Leetcode/r000mi2-bad-bad-bad/open.infoinspxe
+*.sc
+Leetcode/My Amplifier XE Results - Leetcode/r000hs/data.0/27708-28060.0-29408.0.th
+*.trace
+Leetcode/My Inspector XE Results - Leetcode/r000mi2-bad-bad-bad/.bad
