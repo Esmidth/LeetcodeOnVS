@@ -126,9 +126,6 @@
     <ClCompile Include="102.cpp">
       <Filter>源文件\Binary Tree</Filter>
     </ClCompile>
-    <ClCompile Include="102V2.cpp">
-      <Filter>源文件\Binary Tree</Filter>
-    </ClCompile>
     <ClCompile Include="102v3.cpp">
       <Filter>源文件\Binary Tree</Filter>
     </ClCompile>
@@ -139,6 +136,12 @@
       <Filter>源文件\Binary Tree</Filter>
     </ClCompile>
     <ClCompile Include="107.cpp">
+      <Filter>源文件\Binary Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="242%28AC%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="102V2%28AC%29.cpp">
       <Filter>源文件\Binary Tree</Filter>
     </ClCompile>
   </ItemGroup>

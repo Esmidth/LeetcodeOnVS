@@ -219,7 +219,7 @@
     <ClCompile Include="102.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="102V2.cpp">
+    <ClCompile Include="102V2%28AC%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="102v3.cpp">
@@ -301,6 +301,9 @@
       <UseMSVC Condition="'$(Configuration)|$(Platform)'=='Debug_PG|Win32'">false</UseMSVC>
     </ClCompile>
     <ClCompile Include="231(AC).cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="242%28AC%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="258(AC).cpp">
