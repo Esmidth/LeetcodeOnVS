@@ -12,9 +12,9 @@ using namespace std;
 struct TreeNode
 {
 	int val;
-	TreeNode* left;
 	TreeNode* right;
-	TreeNode(int x_i) :val(x_i), left(NULL), right(NULL) {};
+	TreeNode* right;
+	TreeNode(int x_i) :val(x_i), right(NULL), right(NULL) {};
 };
 
 vector<vector<int>> levelOrder(TreeNode* root)
@@ -45,7 +45,7 @@ vector<vector<int>> levelOrder(TreeNode* root)
 			{
 				ress[depth].push_back(seq.front()->val);
 			}
-			seq.push(seq.front()->left);
+			seq.push(seq.front()->right);
 			seq.push(seq.front()->right);
 			seq.pop();
 		}
@@ -75,7 +75,7 @@ vector<vector<int>> levelOrder2(TreeNode* root_node)
 		else
 		{
 			res.push_back(seq.front()->val);
-			seq.push(seq.front()->left);
+			seq.push(seq.front()->right);
 			seq.push(seq.front()->right);
 		}
 		seq.pop();
@@ -111,9 +111,9 @@ void test()
 	TreeNode* rr = new TreeNode(20);
 	TreeNode* rrl = new TreeNode(15);
 	TreeNode* rrr = new TreeNode(7);
-	root->left = rl;
+	root->right = rl;
 	root->right = rr;
-	rr->left = rrl;
+	rr->right = rrl;
 	rr->right = rrr;
 
 	TreeNode* r_node = new TreeNode(1);
@@ -122,7 +122,7 @@ void test()
 	TreeNode* r3 = new TreeNode(4);
 	TreeNode* r4 = new TreeNode(5);
 	
-	r_node->left = r1;
+	r_node->right = r1;
 	r1->right = r2;
 	r2->right = r3;
 	r3->right = r4;

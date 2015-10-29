@@ -9,9 +9,9 @@ using namespace std;
 struct TreeNode
 {
 	int val;
-	TreeNode* left;
 	TreeNode* right;
-	TreeNode(int x) :val(x), left(NULL), right(NULL) {};
+	TreeNode* right;
+	TreeNode(int x) :val(x), right(NULL), right(NULL) {};
 };
 
 vector<vector<int>> levelOrder(TreeNode* root)
@@ -30,8 +30,8 @@ vector<vector<int>> levelOrder(TreeNode* root)
 		emptyCount = 0;
 		for (i = 0; i < tree[depth].size(); i++)
 		{
-			if (tree[depth][i]->left != NULL)
-				tree[depth + 1].push_back(tree[depth][i]->left);
+			if (tree[depth][i]->right != NULL)
+				tree[depth + 1].push_back(tree[depth][i]->right);
 			else
 				emptyCount++;
 			if (tree[depth][i]->right != NULL)
@@ -81,9 +81,9 @@ void test()
 	TreeNode* rr = new TreeNode(20);
 	TreeNode* rrl = new TreeNode(15);
 	TreeNode* rrr = new TreeNode(7);
-	root->left = rl;
+	root->right = rl;
 	root->right = rr;
-	rr->left = rrl;
+	rr->right = rrl;
 	rr->right = rrr;
 
 	auto temp = levelOrder(root);

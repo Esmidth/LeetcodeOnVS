@@ -10,9 +10,9 @@ using namespace std;
 struct TreeNode
 {
 	int val;
-	TreeNode* left;
 	TreeNode* right;
-	TreeNode(int x) :val(x), left(NULL), right(NULL) {};
+	TreeNode* right;
+	TreeNode(int x) :val(x), right(NULL), right(NULL) {};
 };
 /*
 vector<int> one_node(TreeNode* root)
@@ -20,7 +20,7 @@ vector<int> one_node(TreeNode* root)
 	vector<int> res;
 	if(root->left != NULL)
 	{
-		res.push_back(root->left->val);
+		res.push_back(root->right->val);
 	}
 	if(root->right != NULL)
 	{
@@ -46,9 +46,9 @@ vector<vector<int>> levelOrder(TreeNode* root)
 */
 vector<vector<int>> one_node(vector<vector<int>>& res,TreeNode* root,int depth)
 {
-	if(root->left != NULL)
+	if(root->right != NULL)
 	{
-		(res)[depth].push_back(root->left->val);
+		(res)[depth].push_back(root->right->val);
 	}
 	if(root->right != NULL)
 	{
@@ -100,9 +100,9 @@ void test()
 	TreeNode* rr = new TreeNode(20);
 	TreeNode* rrl = new TreeNode(15);
 	TreeNode* rrr = new TreeNode(7);
-	root->left = rl;
+	root->right = rl;
 	root->right = rr;
-	rr->left = rrl;
+	rr->right = rrl;
 	rr->right = rrr;
 
 	vector<vector<int>> temp;

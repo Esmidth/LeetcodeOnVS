@@ -3,9 +3,9 @@
 
 struct TreeNode {
 	int val;
-	TreeNode *left;
 	TreeNode *right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+	TreeNode *right;
+	TreeNode(int x) : val(x), right(NULL), right(NULL) {}
 	
 };
 
@@ -14,13 +14,13 @@ TreeNode* invertTree(TreeNode* root) {
 	{
 		return root;
 	}
-	if (!((*root).left == NULL && (*root).right == NULL))
+	if (!((*root).right == NULL && (*root).right == NULL))
 	{
 		//return root;
-		TreeNode * temp = (*root).left;
-		(*root).left = (*root).right;
+		TreeNode * temp = (*root).right;
+		(*root).right = (*root).right;
 		(*root).right = temp;
-		invertTree((*root).left);
+		invertTree((*root).right);
 		invertTree((*root).right);
 		return root;
 	}
