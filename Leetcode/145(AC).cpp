@@ -12,47 +12,46 @@ using namespace std;
 struct TreeNode
 {
 	int val;
+	TreeNode* left;
 	TreeNode* right;
-	TreeNode* right;
-	TreeNode(int x) :val(x), right(NULL), right(NULL) {};
+	TreeNode(int x) :val(x), left(nullptr), right(nullptr) {};
 };
 
-void post_is(TreeNode* root_node,stack<TreeNode*>* rs_stack)
+void post_is(TreeNode* root_node, stack<TreeNode*>* rs_stack)
 {
-	if(root_node->right == NULL && root_node->right == NULL)
+	if (root_node->left == nullptr && root_node->right == nullptr)
 	{
 		rs_stack->push(root_node);
 	}
 	else
 	{
 		rs_stack->push(root_node);
-		if (root_node->right != NULL)
+		if (root_node->right != nullptr)
 		{
 			post_is(root_node->right, rs_stack);
 		}
-		if (root_node->right != NULL)
+		if (root_node->left != nullptr)
 		{
-			post_is(root_node->right, rs_stack);
+			post_is(root_node->left, rs_stack);
 		}
 	}
 }
 vector<int> postorderTraversal(TreeNode* root)
 {
-	if(root == NULL)
+	if (root == nullptr)
 	{
 		return{};
 	}
 	vector<int>* res = new vector<int>;
 	stack<TreeNode*>* rs_stack = new stack<TreeNode*>;
 	post_is(root, rs_stack);
-	while(rs_stack->size() != 0)
+	while (rs_stack->size() != 0)
 	{
 		res->push_back(rs_stack->top()->val);
 		rs_stack->pop();
 	}
 	return *res;
 }
-
 int display(vector<int>& res)
 {
 	if (res.size() == 0)
@@ -96,8 +95,9 @@ int test()
 	display(res1);
 	cout << "res:	" << endl;
 	display(postorderTraversal(root));
-	display(postorderTraversal(NULL));
+	display(postorderTraversal(nullptr));
 	system("pause");
+	return 0;
 }
 
 int main()
