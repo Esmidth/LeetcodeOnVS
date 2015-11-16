@@ -9,29 +9,28 @@ using namespace std;
 struct TreeNode
 {
 	int val;
+	TreeNode* left;
 	TreeNode* right;
-	TreeNode* right;
-	TreeNode(int x) :val(x), right(NULL), right(NULL) {};
+	TreeNode(int x) :val(x), left(NULL), right(NULL) {};
 };
 
-vector<vector<int>> levelOrder(TreeNode* root)
-{
-	if(root == NULL) return{};
+vector<vector<int>> levelOrder(TreeNode* root) {
+	if (root == NULL) return{};
 	vector<vector<int>> res;
 	res.push_back({ root->val });
 	int depth = 0;
 	vector<vector<TreeNode*>> tree;
-	tree.push_back({root});
+	tree.push_back({ root });
 	int emptyCount;
 	int i;
-	while(true)
+	while (true)
 	{
 		tree.push_back({});
 		emptyCount = 0;
-		for (i = 0;i < tree[depth].size();i++)
+		for (i = 0; i < tree[depth].size(); i++)
 		{
-			if(tree[depth][i]->right != NULL)
-				tree[depth + 1].push_back(tree[depth][i]->right);
+			if (tree[depth][i]->left != NULL)
+				tree[depth + 1].push_back(tree[depth][i]->left);
 			else
 				emptyCount++;
 			if (tree[depth][i]->right != NULL)
@@ -39,14 +38,14 @@ vector<vector<int>> levelOrder(TreeNode* root)
 			else
 				emptyCount++;
 		}
-		if(emptyCount == i*2)
+		if (emptyCount == i * 2)
 			break;
 		depth++;
 	}
-	for (i = 0; i < tree.size()-1;i++)
+	for (i = 0; i < tree.size() - 1; i++)
 		res.push_back({});
-	for (i = 1; i < res.size();i++)
-		for (int j = 0; j < tree[i].size();j++)
+	for (i = 1; i < res.size(); i++)
+		for (int j = 0; j < tree[i].size(); j++)
 			res[i].push_back(tree[i][j]->val);
 	res.pop_back();
 	return res;

@@ -12,33 +12,37 @@ using namespace std;
 struct TreeNode
 {
 	int val;
+	TreeNode* left;
 	TreeNode* right;
-	TreeNode* right;
-	TreeNode(int x) :val(x), right(NULL), right(NULL) {};
+
+	explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr)
+	{
+	};
 };
 
-vector<int>* preorder_tr_is(vector<int>* res,TreeNode* r_node)
+vector<int>* preorder_tr_is(vector<int>* res, TreeNode* r_node)
 {
 	res->push_back(r_node->val);
-	if(r_node->right == NULL && r_node->right == NULL)
+	if (r_node->left == nullptr && r_node->right == nullptr)
 	{
 		return res;
 	}
-	if(r_node->right != NULL)
+	if (r_node->left != nullptr)
 	{
-		preorder_tr_is(res, r_node->right);
+		preorder_tr_is(res, r_node->left);
 	}
-	if(r_node->right != NULL)
+	if (r_node->right != nullptr)
 	{
 		preorder_tr_is(res, r_node->right);
 	}
 	return res;
 }
+
 vector<int> preorderTraversal(TreeNode* root)
 {
-	if(root == NULL)
+	if (root == nullptr)
 	{
-		return{};
+		return {};
 	}
 	vector<int>* res = new vector<int>;
 	res = preorder_tr_is(res, root);
@@ -48,12 +52,12 @@ vector<int> preorderTraversal(TreeNode* root)
 
 int display(vector<int>& res)
 {
-	if(res.size() == 0)
+	if (res.size() == 0)
 	{
 		cout << "FUCKING a empty vector" << endl;
 		return 1;
 	}
-	for (int i = 0; i < res.size();i++)
+	for (int i = 0; i < res.size(); i++)
 	{
 		cout << res[i] << " ";
 	}
@@ -81,15 +85,16 @@ int test()
 	n5->right = n8;
 	n3->right = n6;
 	n6->right = n9;
-	
-	vector<int> res1 = { 1,2,4,5,7,8,3,6,9 };
+
+	vector<int> res1 = {1,2,4,5,7,8,3,6,9};
 
 	vector<int> empty;
-	display(empty);
-	display(res1);
+	//display(empty);
+	//display(res1);
 	cout << "res:	" << endl;
-	display(preorderTraversal(NULL));
+	display(preorderTraversal(root));
 	system("pause");
+	return 0;
 }
 
 int main()
@@ -97,3 +102,4 @@ int main()
 	test();
 	return 0;
 }
+

@@ -7,8 +7,8 @@ using namespace std;
 class TrieNode {
 public:
 	TrieNode() {
-		for (int i = 0; i < 26; i++) {
-			next[i] = NULL;
+		for (auto i = 0; i < 26; i++) {
+			next[i] = nullptr;
 		}
 		isString = false;
 	}
@@ -25,33 +25,36 @@ public:
 		root = new TrieNode();
 	}
 
-	void insert(string word) {
-		TrieNode *p = root;
-		for (int i = 0; i < word.size(); ++i) {
-			if (p->next[word[i] - 'a'] == NULL)
+	void insert(string word) const
+	{
+		auto p = root;
+		for (auto i = 0; i < word.size(); ++i) {
+			if (p->next[word[i] - 'a'] == nullptr)
 				p->next[word[i] - 'a'] = new TrieNode();
 			p = p->next[word[i] - 'a'];
 		}
 		p->isString = true;
 	}
 
-	bool search(string word) {
+	bool search(string word) const
+	{
 		TrieNode *p = root;
-		for (int i = 0; i < word.size(); ++i) {
-			if (p == NULL)
+		for (auto i = 0; i < word.size(); ++i) {
+			if (p == nullptr)
 				return false;
 			p = p->next[word[i] - 'a'];
 		}
-		if (p == NULL || p->isString == false)
+		if (p == nullptr || p->isString == false)
 			return false;
 		return true;
 	}
 
 
-	bool startsWith(std::string prefix) {
+	bool startsWith(std::string prefix) const
+	{
 		TrieNode*p = root;
 		for (int i = 0; i <= prefix.size(); ++i) {
-			if (p == NULL)
+			if (p == nullptr)
 				return false;
 			p = p->next[prefix[i] - 'a'];
 		}
