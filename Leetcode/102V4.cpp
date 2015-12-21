@@ -87,7 +87,7 @@ vector<vector<int>> levelOrder2(TreeNode* root_node)
 	return{ res };
 }
 
-int display(vector<vector<int>> node)
+int display1(vector<vector<int>> node)
 {
 	if (node.size() == 0)
 	{
@@ -133,7 +133,7 @@ void test()
 		{ 1234,5,2 }
 	};
 	//display({});
-	display(levelOrder2(r_node));
+	display1(levelOrder2(r_node));
 	//display(tests_ises);
 	//display(temp);
 	system("pause");

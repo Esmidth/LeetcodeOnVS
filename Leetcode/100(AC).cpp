@@ -80,7 +80,7 @@ bool isSameTree(TreeNode* p,TreeNode* q)
 	return res1 == res2;
 }
 
-int display(vector<vector<int>> node)
+int display1(vector<vector<int>> node)
 {
 	if (node.size() == 0)
 	{

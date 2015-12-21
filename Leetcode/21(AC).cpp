@@ -63,7 +63,7 @@ ListNode* mergeTwoLists(ListNode* l1,ListNode* l2)
 	return res;
 }
 
-int display(ListNode* list_node)
+int display1(ListNode* list_node)
 {
 	if(list_node == NULL)
 	{
@@ -93,12 +93,12 @@ void test()
 	ListNode* r3 = new ListNode(6);
 	r1->next = r2;
 	r2->next = r3;
-	display(l1);
-	display(r1);
+	display1(l1);
+	display1(r1);
 	//display(mergeTwoLists(l1, r1));
 
-	display(NULL);
-	display(mergeTwoLists(NULL, r1));
+	display1(NULL);
+	display1(mergeTwoLists(NULL, r1));
 	system("pause");
 }
 

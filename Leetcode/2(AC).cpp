@@ -67,7 +67,7 @@ ListNode* addTwoNumbers(ListNode * l1,ListNode* l2)
 	return ori;
 }
 
-int display(ListNode * list_node)
+int display1(ListNode * list_node)
 {
 	if(list_node == NULL)
 	{
@@ -97,7 +97,7 @@ void testout()
 	ListNode* l3 = new ListNode(3);
 	l1->next = l2;
 	l2->next = l3;
-	display(l1);
+	display1(l1);
 }
 void testAdd()
 {
@@ -114,9 +114,9 @@ void testAdd()
 	r2->next = r3;
 
 	//display(l2);
-	display(r4);
-	display(r3);
-	display(addTwoNumbers(r3, r4));
+	display1(r4);
+	display1(r3);
+	display1(addTwoNumbers(r3, r4));
 
 }
 int main()

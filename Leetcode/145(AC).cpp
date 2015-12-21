@@ -52,7 +52,7 @@ vector<int> postorderTraversal(TreeNode* root)
 	}
 	return *res;
 }
-int display(vector<int>& res)
+int display1(vector<int>& res)
 {
 	if (res.size() == 0)
 	{
@@ -91,11 +91,11 @@ int test()
 	vector<int> res1 = { 4,7,8,5,2,9,6,3,1 };
 
 	vector<int> empty;
-	display(empty);
-	display(res1);
+	display1(empty);
+	display1(res1);
 	cout << "res:	" << endl;
-	display(postorderTraversal(root));
-	display(postorderTraversal(nullptr));
+	display1(postorderTraversal(root));
+	display1(postorderTraversal(nullptr));
 	system("pause");
 	return 0;
 }

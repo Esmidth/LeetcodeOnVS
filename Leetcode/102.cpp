@@ -61,7 +61,7 @@ vector<vector<int>> levelOrder(TreeNode* root)
 	
 }
 
-int display(TreeNode* root)
+int display1(TreeNode* root)
 {
 	if (root == NULL)
 	{
@@ -72,7 +72,7 @@ int display(TreeNode* root)
 }
 
 
-int display(vector<vector<int>>& root)
+int display1(vector<vector<int>>& root)
 {
 	if(&root == NULL)
 	{
@@ -106,7 +106,7 @@ void test()
 	rr->right = rrr;
 
 	vector<vector<int>> temp;
-	display(one_node(temp,root,0));
+	display1(one_node(temp,root,0));
 	system("pause");
 }
 int main()

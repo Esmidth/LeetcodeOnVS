@@ -48,7 +48,7 @@ ListNode* removeNthFromEnd(ListNode* head,int n)
 	return start;
 }
 
-void display(ListNode* seq)
+void display1(ListNode* seq)
 {
 	if(seq == NULL)
 	{
@@ -78,8 +78,8 @@ int main()
 	ListNode* t21 = new ListNode(1);
 	ListNode* t22 = new ListNode(2);
 	t21->next = t22;
-	display(t21);
-	display(removeNthFromEnd(t22, 1));
+	display1(t21);
+	display1(removeNthFromEnd(t22, 1));
 	//display(start);
 	//display(removeNthFromEnd(start, 0));
 	//display(removeNthFromEnd(start, 1));

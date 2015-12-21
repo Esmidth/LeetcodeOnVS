@@ -50,7 +50,7 @@ vector<int> preorderTraversal(TreeNode* root)
 }
 
 
-int display(vector<int>& res)
+int display1(vector<int>& res)
 {
 	if (res.size() == 0)
 	{
@@ -92,7 +92,7 @@ int test()
 	//display(empty);
 	//display(res1);
 	cout << "res:	" << endl;
-	display(preorderTraversal(root));
+	display1(preorderTraversal(root));
 	system("pause");
 	return 0;
 }

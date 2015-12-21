@@ -56,7 +56,7 @@ vector<vector<int>> levelOrderBottom(TreeNode* root) {
 	return resv;
 }
 
-int display(vector<vector<int>> node)
+int display1(vector<vector<int>> node)
 {
 	if (node.size() == 0)
 	{
@@ -93,7 +93,7 @@ void test()
 	};
 	//	display({});
 	//	display(tests_ises);
-	display(temp);
+	display1(temp);
 	system("pause");
 }
 
