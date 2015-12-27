@@ -5,9 +5,9 @@
 struct TreeNode
 {
 	int val;
+	TreeNode* left;
 	TreeNode* right;
-	TreeNode* right;
-	TreeNode(int x) :val(x), right(nullptr), right(nullptr) {};
+	TreeNode(int x) :val(x), left(nullptr), right(nullptr) {};
 };
 
 int maxDepth(TreeNode* root)
@@ -16,21 +16,21 @@ int maxDepth(TreeNode* root)
 	{
 		return 0;
 	}
-	if(root->right == nullptr && root->right == nullptr)
+	if(root->left == nullptr && root->right == nullptr)
 	{
 		return 1;
 	}
-	else if(root->right == nullptr && root->right != nullptr)
+	else if(root->left == nullptr && root->right != nullptr)
 	{
 		return maxDepth(root->right) + 1;
 	}
-	else if(root->right == nullptr && root->right != nullptr)
+	else if(root->right== nullptr && root->left != nullptr)
 	{
-		return maxDepth(root->right) + 1;
+		return maxDepth(root->left) + 1;
 	}
-	else if (root->right != nullptr && root->right != nullptr)
+	else if (root->left!= nullptr && root->right != nullptr)
 	{
-		int ld = maxDepth((*root).right);
+		int ld = maxDepth((*root).left);
 		int rd = maxDepth((*root).right);
 		if (ld > rd)
 		{
@@ -41,6 +41,7 @@ int maxDepth(TreeNode* root)
 			return rd + 1;
 		}
 	}
+	return 0;
 }
 int main()
 {
@@ -49,7 +50,7 @@ int main()
 	TreeNode r1(1);
 	TreeNode l11(2);
 	TreeNode l12(2);
-	root.right = &l1;
+	root.left = &l1;
 	root.right = &r1;
 	l1.right = &l11;
 	l1.right = &l12;
