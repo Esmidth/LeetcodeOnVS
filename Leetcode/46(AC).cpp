@@ -1,4 +1,5 @@
-﻿#include "stdafx.h"
+﻿// Permutations	<Medium>
+#include "stdafx.h"
 #include <iostream>
 #include <vector>
 using namespace std;
