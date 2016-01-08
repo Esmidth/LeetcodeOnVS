@@ -177,6 +177,12 @@
     <ClCompile Include="27%28AC%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="11.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="169%28AC%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

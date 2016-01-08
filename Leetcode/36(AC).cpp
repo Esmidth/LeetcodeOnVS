@@ -126,6 +126,7 @@ void test()
 				{'.','.','.','4','1','9','.','.','5'},
 				{'.','.','.','.','8','.','.','7','9'}
 			};
+	display(&test_case1);
 	cout << isValidSudoku(test_case1);
 }
 

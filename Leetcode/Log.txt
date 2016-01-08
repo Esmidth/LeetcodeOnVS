@@ -23,3 +23,4 @@
 2015.12.29	#3		Medium	AC
 2016.1.1	#36		Easy	AC
 2016.1.4	#27		Easy	AC(ref)	don't get the test meaning
+2016.1.9	#169	Easy	AC
