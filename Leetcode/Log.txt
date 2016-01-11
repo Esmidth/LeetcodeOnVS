@@ -24,3 +24,5 @@
 2016.1.1	#36		Easy	AC
 2016.1.4	#27		Easy	AC(ref)	don't get the test meaning
 2016.1.9	#169	Easy	AC
+2016.1.11	#168	Easy	AC(ref) get string & ? usage
+2016.1.11	#171	Easy	AC
