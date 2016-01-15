@@ -26,3 +26,6 @@
 2016.1.9	#169	Easy	AC
 2016.1.11	#168	Easy	AC(ref) get string & ? usage
 2016.1.11	#171	Easy	AC
+2016.1.11	#217	Easy	AC
+2016.1.11	#237	Easy	AC
+2016.1.16	#206	Easy	AC

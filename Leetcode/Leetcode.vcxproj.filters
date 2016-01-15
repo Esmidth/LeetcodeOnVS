@@ -16,6 +16,12 @@
     <Filter Include="源文件\Binary Tree">
       <UniqueIdentifier>{59dd99ac-fb95-4104-b1eb-c855e4937372}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\进制转换">
+      <UniqueIdentifier>{1ca0d2ff-23b5-4ebd-99be-15ce70ba0cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Linked List">
+      <UniqueIdentifier>{5975dc08-2ae1-4a66-a0a4-462e4ebe2793}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -184,10 +190,19 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="168%28AC%29.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\进制转换</Filter>
     </ClCompile>
     <ClCompile Include="171%28AC%29.cpp">
+      <Filter>源文件\进制转换</Filter>
+    </ClCompile>
+    <ClCompile Include="217%28AC%29.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="237%28AC%29.cpp">
+      <Filter>源文件\Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="206%28AC%29.cpp">
+      <Filter>源文件\Linked List</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
