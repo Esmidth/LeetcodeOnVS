@@ -210,6 +210,9 @@
     <ClCompile Include="328%28AC%29.cpp">
       <Filter>源文件\Linked List</Filter>
     </ClCompile>
+    <ClCompile Include="83%28AC%29.cpp">
+      <Filter>源文件\Linked List</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
